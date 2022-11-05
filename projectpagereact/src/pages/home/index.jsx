@@ -1,13 +1,16 @@
+import { Button } from '../../components/Button';
+import { Header } from '../../components/Header';
+
 export function Home() {
     return (
         <>
-            <h1>
-                Home
-            </h1>
-            <button>
-                Efetuar login
-            </button>
+            <Header />
+
+            <Button title='Login' onClick={str => alert('opa')}/>
+            <Button title='Teste' variant='secondary' onClick={alert}/>
+
         </>
+
     );
 
 };
