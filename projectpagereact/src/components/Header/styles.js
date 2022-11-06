@@ -39,10 +39,12 @@ const BuscarInputContainer = Styled.div`
     border-radius: 8px;
     padding: 2px 5px;
     margin: 0 12px;
+    display: flex;
+    align-items: center;
 `;
 
 const Menu = Styled.a`
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-size: 12px;
     line-height: 25px;
@@ -52,7 +54,7 @@ const Menu = Styled.a`
 `;
 
 const MenuRight = Styled.a`
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-size: 12px;
     line-height: 25px;

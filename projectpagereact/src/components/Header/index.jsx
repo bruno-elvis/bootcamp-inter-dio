@@ -1,13 +1,13 @@
 import { Button } from '../Button';
 import * as Comps from './styles';
-import logo from '../../assets/kawasaki.svg';
+import logo from '../../assets/kawasaki.png';
 
 export function Header() {
     return (
         <Comps.Wrapper>
             <Comps.Container>
                 <Comps.Row>
-                    <img src={logo} alt='Logo Dio'></img>
+                    <img src={logo} alt='Logo'></img>
 
                     <Comps.BuscarInputContainer>
                         <Comps.Input placeholder='Buscar...'/>

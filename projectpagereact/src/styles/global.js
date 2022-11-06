@@ -10,4 +10,8 @@ export const GlobalStyle = createGlobalStyle`
         background-color: #1e192c;
         color: #fff;
     }
+
+    img{
+        width: 100px;
+    }
 `;

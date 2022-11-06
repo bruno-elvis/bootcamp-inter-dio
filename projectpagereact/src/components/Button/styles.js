@@ -2,6 +2,7 @@ import Styled, { css } from 'styled-components';
 
 const ButtonContainer = Styled.button`
     background: #565656;
+    cursor: pointer;
     border-radius: 22px;
     position: relative;
 
@@ -17,14 +18,18 @@ const ButtonContainer = Styled.button`
 
             background: #e4105d;
 
+            &:hover {
+                opacity: .6;
+            }
+
             &::after {
                 content: '';
                 position: absolute;
                 border: 1px solid #e4105d;
-                top: -5px;
-                left: -6px;
-                width: calc(100% + 10px);
-                height: calc(100% + 10px);
+                top: -2px;
+                left: -2px;
+                width: calc(100% + 2px);
+                height: calc(100% + 2px);
                 border-radius: 22px;
             }
         `
