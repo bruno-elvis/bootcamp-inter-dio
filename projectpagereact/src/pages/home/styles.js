@@ -1,6 +1,6 @@
-import Styled from "styled-components";
+import styled from "styled-components";
 
-export const Container = Styled.main`
+export const Container = styled.main`
     width: 100%;
     max-width: 80%;
     margin: 0 auto;
@@ -12,7 +12,7 @@ export const Container = Styled.main`
     align-items: center;
 `;
 
-export const Title = Styled.h2`
+export const Title = styled.h2`
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -24,11 +24,11 @@ export const Title = Styled.h2`
     color: #fff;
 `;
 
-export const TitleHighlight = Styled.span`
+export const TitleHighlight = styled.span`
     color: #e4105d;
 `;
 
-export const TextContent = Styled.p`
+export const TextContent = styled.p`
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;

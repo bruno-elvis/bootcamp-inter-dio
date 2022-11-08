@@ -1,6 +1,6 @@
-import Styled, { css } from 'styled-components';
+import styled, { css } from 'styled-components';
 
-const ButtonContainer = Styled.button`
+const ButtonContainer = styled.button`
     background: #565656;
     cursor: pointer;
     border-radius: 22px;

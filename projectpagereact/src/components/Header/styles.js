@@ -1,6 +1,6 @@
-import Styled from 'styled-components';
+import styled from 'styled-components';
 
-const Container = Styled.div`
+const Container = styled.div`
     width: 100%;
     max-width: 80%;
     height: 47px;
@@ -11,19 +11,19 @@ const Container = Styled.div`
     margin: 0 auto;
 `;
 
-const Row = Styled.div`
+const Row = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
 `;
 
-const Column = Styled.div`
+const Column = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
 `;
 
-const Wrapper = Styled.div`
+const Wrapper = styled.div`
     background-color: #151515;
     width: 100%;
     height: 47px;
@@ -32,7 +32,7 @@ const Wrapper = Styled.div`
     align-items: center;
 `;
 
-const BuscarInputContainer = Styled.div`
+const BuscarInputContainer = styled.div`
     width: 175px;
     height: 30px;
     background-color: #2d2d37;
@@ -43,7 +43,7 @@ const BuscarInputContainer = Styled.div`
     align-items: center;
 `;
 
-const Menu = Styled.a`
+const Menu = styled.a`
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-size: 12px;
@@ -53,7 +53,7 @@ const Menu = Styled.a`
     text-decoration: none;
 `;
 
-const MenuRight = Styled.a`
+const MenuRight = styled.a`
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-size: 12px;
@@ -63,14 +63,14 @@ const MenuRight = Styled.a`
     text-decoration: none;
 `;
 
-const UserPicture = Styled.img`
+const UserPicture = styled.img`
     width: 32px;
     height: 32px;
     border-radius: 22px;
     border: 2px solid #fff;
 `;
 
-const Input = Styled.input`
+const Input = styled.input`
     background: transparent;
     flex: 1;
     border: 0;
