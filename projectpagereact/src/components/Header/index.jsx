@@ -2,35 +2,39 @@ import { Button } from '../Button';
 import * as Comps from './styles';
 import logo from '../../assets/kawasaki.png';
 
-export function Header() {
+export function Header({ auth }) {
     return (
         <Comps.Wrapper>
             <Comps.Container>
                 <Comps.Row>
                     <img src={logo} alt='Logo'></img>
 
-                    <Comps.BuscarInputContainer>
-                        <Comps.Input placeholder='Buscar...'/>
+                    {auth ? (
+                        <>
+                            <Comps.BuscarInputContainer>
+                                <Comps.Input placeholder='Buscar...'/>
 
-                    </Comps.BuscarInputContainer>
+                            </Comps.BuscarInputContainer>
 
-                    <Comps.Menu>
-                        Live Code
+                            <Comps.Menu>Live Code</Comps.Menu>
 
-                    </Comps.Menu>
-
-                    <Comps.Menu>
-                        Global
-
-                    </Comps.Menu>
+                            <Comps.Menu>Global</Comps.Menu>
+                        </>
+                    ) : null}
 
                 </Comps.Row>
 
                 <Comps.Row>
-                    <Comps.MenuRight href='#'>Home</Comps.MenuRight>
+                    {auth ? (
+                        <Comps.UserPicture src='https://avatars.githubusercontent.com/u/50249992?v=4' />
+                    ) : (
+                        <>
+                            <Comps.MenuRight href='#'>Home</Comps.MenuRight>
 
-                    <Button title="Entrar"></Button>
-                    <Button title="Cadastrar"></Button>
+                            <Button title="Entrar"></Button>
+                            <Button title="Cadastrar"></Button>
+                        </>
+                    )}
 
                 </Comps.Row>
 
