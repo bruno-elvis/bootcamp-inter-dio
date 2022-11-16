@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { IProgressStyled } from './types';
+
 export const Container = styled.div`
     display: flex;
     flex-direction: row;
@@ -22,7 +24,7 @@ export const NameText = styled.div`
     line-height: 25px;
     color: #fff;
 `
-export const Progress = styled.div`
+export const Progress = styled.div<IProgressStyled>`
     width: 180px;
     height: 6px;
     background-color: #fff;

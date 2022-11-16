@@ -1,8 +1,9 @@
 import { Button } from '../Button';
 import * as Comps from './styles';
 import logo from '../../assets/kawasaki.png';
+import { IHeader } from './types';
 
-export function Header({ auth }) {
+export function Header({ auth }: IHeader) {
     return (
         <Comps.Wrapper>
             <Comps.Container>

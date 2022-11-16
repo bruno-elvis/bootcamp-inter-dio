@@ -4,6 +4,9 @@ import { useForm } from 'react-hook-form';
 
 import { reqApi } from '../../services/api';
 
+//Types
+import { IFormData } from './types';
+
 //yup
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
@@ -25,7 +28,7 @@ export function Login() {
     }).required();
 
     // Definição do controle de formulário de login com "react-hook-form"
-    const { control, handleSubmit, formState: { errors } } = useForm({
+    const { control, handleSubmit, formState: { errors } } = useForm<IFormData> ({
         resolver: yupResolver(schema),
         mode: 'onChange' //validar o schema do resolver no evento de onChange
     });
@@ -33,9 +36,9 @@ export function Login() {
     // Definição de "navigate" para ação de botão
     const navigate = useNavigate();
 
-    const onSubmit = async formData => {
+    const onSubmit = async (formData: IFormData) => {
         try {
-            const { data } = await reqApi.get();
+            const { data } = await reqApi.get('');
 
             let userPass = false;
 
